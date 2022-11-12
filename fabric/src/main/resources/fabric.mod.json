@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "bnd",
+  "version": "${version}",
+  "name": "BladeAndDagger",
+  "description": "",
+  "authors": [
+    "amo",
+    "crispytwig"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "crispyamo.bnd.fabric.BladeAndDaggerFabric"
+    ]
+  },
+  "mixins": [
+    "bnd.mixins.json",
+    "bnd-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "minecraft": ">=1.19.2"
+  }
+}

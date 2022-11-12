@@ -1,0 +1,18 @@
+{
+ "parent":"minecraft:item/handheld",
+  "loader":"forge:separate-perspective",
+  "textures": {
+    "layer0": "bnd:item/longbow"
+  },
+  "base": {
+    "parent": "bnd:item/longbow_handheld"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "bnd:item/longbow_gui"
+    },
+    "fixed": {
+      "parent": "bnd:item/longbow_gui"
+    }
+  }  
+}

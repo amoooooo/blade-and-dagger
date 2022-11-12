@@ -1,0 +1,18 @@
+{
+ "parent":"minecraft:item/handheld",
+  "loader":"forge:separate-perspective",
+  "textures": {
+    "layer0": "bnd:item/golden_glaive"
+  },
+  "base": {
+    "parent": "bnd:item/golden_glaive_handheld"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "bnd:item/golden_glaive_gui"
+    },
+    "fixed": {
+      "parent": "bnd:item/golden_glaive_gui"
+    }
+  }  
+}

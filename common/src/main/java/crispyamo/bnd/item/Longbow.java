@@ -76,16 +76,18 @@ public class Longbow extends BowItem {
         }
     }
 
-    public static float getPowerForTime(int i){
-        float f = (float)i / 30.0F;
-        f = (f * f + f * 2.0F) / 4.0F;
+    public static float getPowerForTime(int i) {
+        float f = (float) i / 20.0F;
+        f = (f * f + f * 2.0F) / 3.0F;
         if (f > 1.0F) {
             f = 1.0F;
         }
         return f;
     }
 
-
+    public int getUseDuration(ItemStack itemStack) {
+        return 72000;
+    }
 
     @Override
     public int getDefaultProjectileRange() {

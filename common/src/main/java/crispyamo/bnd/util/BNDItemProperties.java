@@ -13,14 +13,14 @@ public class BNDItemProperties {
     }
 
     private static void makeBow(Item item) {
-        register(Items.BOW, new ResourceLocation("pull"), (itemStack, clientLevel, livingEntity, i) -> {
+        register(BNDItems.LONGBOW.get(), new ResourceLocation("pull"), (itemStack, clientLevel, livingEntity, i) -> {
             if (livingEntity == null) {
                 return 0.0F;
             } else {
                 return livingEntity.getUseItem() != itemStack ? 0.0F : (float) (itemStack.getUseDuration() - livingEntity.getUseItemRemainingTicks()) / 20.0F;
             }
         });
-        register(Items.BOW, new ResourceLocation("pulling"), (itemStack, clientLevel, livingEntity, i) -> {
+        register(BNDItems.LONGBOW.get(), new ResourceLocation("pulling"), (itemStack, clientLevel, livingEntity, i) -> {
             return livingEntity != null && livingEntity.isUsingItem() && livingEntity.getUseItem() == itemStack ? 1.0F : 0.0F;
         });
     }

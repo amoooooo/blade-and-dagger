@@ -18,7 +18,7 @@ import java.util.function.Supplier;
 public class BNDItems {
     private static final Registrar<Item> REGISTRY = Registries.get(BladeAndDagger.MOD_ID).get(Registry.ITEM_REGISTRY);
 
-    public static final RegistrySupplier<Item> HALBERD = REGISTRY.register(new ResourceLocation(BladeAndDagger.MOD_ID, "halberd"), () -> new Halberd(Tiers.IRON, 5, 0.8f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistrySupplier<Item> GOLDEN_HALBERD = REGISTRY.register(new ResourceLocation(BladeAndDagger.MOD_ID, "golden_halberd"), () -> new Halberd(Tiers.GOLD, 5, 0.8f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistrySupplier<Item> LONGBOW = REGISTRY.register(new ResourceLocation(BladeAndDagger.MOD_ID, "longbow"), () -> new Longbow(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistrySupplier<Item> SPEAR = REGISTRY.register(new ResourceLocation(BladeAndDagger.MOD_ID, "spear"), () -> new Spear(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistrySupplier<Item> SCYTHE = REGISTRY.register(new ResourceLocation(BladeAndDagger.MOD_ID, "scythe"), () -> new Scythe(Tiers.IRON, 5, 0.8f,new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));

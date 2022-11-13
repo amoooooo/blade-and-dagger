@@ -1,6 +1,0 @@
-{
-  "parent": "bnd:item/longbow_gui",
-  "textures": {
-    "layer0": "bnd:item/longbow_pulling_1_gui"
-  }
-}

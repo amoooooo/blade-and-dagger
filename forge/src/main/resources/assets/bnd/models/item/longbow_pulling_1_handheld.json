@@ -1,0 +1,6 @@
+{
+    "parent": "bnd:item/longbow_handheld",
+    "textures": {
+        "layer0": "item/longbow_pulling_1"
+    }
+}
